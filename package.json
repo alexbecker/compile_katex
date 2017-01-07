@@ -1,0 +1,20 @@
+{
+  "name": "compile_katex",
+  "version": "0.1.0",
+  "description": "Statically compile LaTeX markup into an HTML file.",
+  "main": "compile_katex.js",
+  "bin": "compile_katex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "latex",
+    "math",
+    "markup"
+  ],
+  "author": "Alex Becker",
+  "dependencies": {
+    "katex": "^0.6.0",
+    "minimist": "^1.2.0"
+  }
+}
