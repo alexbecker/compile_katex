@@ -5,8 +5,8 @@ var katex = require("katex");
 var argv = require("minimist")(process.argv.slice(2));
 var katexCSS = argv.css || "//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css";
 
-var inlineRE = /\\\(.*?\\\)/;
-var displayRE = /(\$\$.*?\$\$)|(\\\[.*?\\\])/;
+var inlineRE = /\\\(.*?\\\)/s;
+var displayRE = /(\$\$.*?\$\$)|(\\\[.*?\\\])/s;
 var skipTags = ["SCRIPT", "STYLE", "CODE", "PRE"];  // must be non-nestable
 
 var skipTagREs = [/<SCRIPT>.*?<\/SCRIPT>/i];    // FIXME: don't break on <SCRIPT>x='</SCRIPT>'</SCRIPT>
