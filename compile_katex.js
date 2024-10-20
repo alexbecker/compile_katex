@@ -58,5 +58,5 @@ function injectDependencies(string) {
 
 for (var i=0; i<argv._.length; i++) {
     var raw = fs.readFileSync(argv._[i]).toString();
-    fs.writeFile(argv._[i], injectDependencies(renderString(raw)));
+    fs.writeFileSync(argv._[i], injectDependencies(renderString(raw)));
 }
